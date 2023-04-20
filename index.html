@@ -53,6 +53,41 @@
             <a href="#"><img src="./img/social-2.png" alt="Logo Facebook"></a>
             <a href="#"><img src="./img/social-3.png" alt="Logo Twitter"></a>
         </nav>
+        <div>
+            <form action="" method="" onsubmit="return false">
+                <fieldset>
+                    <legend>Contato</legend>
+                    <div>
+                        <label for="idEmail">Senha</label>
+                        <input type="text" name="txtPass" id="idPass" placeholder="Senha" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                        title="Precisa conter no mínimo 8 caractéres e um em maiusculo e pelo menos um em minusculo">
+                    </div>
+                    <div>
+                        <label for="idNome">Nome</label>
+                        <input type="text" name="txtNome" id="idNome" placeholder="Nome">
+                    </div>
+                    <div>
+                        <label for="idGrava">Gravar Dados</label>
+                        <input type="checkbox" name="chbGrava" id="idGrava" required>
+                    </div>
+                    <!-- <div>
+                        <fieldset>
+                            <legend>Genêro</legend>
+                            <label for="">Masculino</label>
+                            <input type="radio" name="rdb" id="idRdbM" value="m" checked="checked">
+                            <label for="">Feminino</label>
+                            <input type="radio" name="rdb" id="idRdbF" value="f">
+                            <label for="">Outros</label>
+                            <input type="radio" name="rdb" id="idRdbO" value="o">
+                        </fieldset>
+                    </div> -->
+                    <div>
+                        <input type="submit" value="Enviar">
+                        <input type="reset" value="Limpar">
+                    </div>
+                </fieldset>
+            </form>
+        </div>
     </footer>
 </body>
 </html>
