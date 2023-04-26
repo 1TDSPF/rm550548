@@ -54,36 +54,35 @@
             <a href="#"><img src="./img/social-3.png" alt="Logo Twitter"></a>
         </nav>
         <div>
-            <form action="" method="" onsubmit="return false">
+            <form action="index.html" method="POST" onsubmit="return true">
                 <fieldset>
-                    <legend>Contato</legend>
+                    <legend>Login</legend>
                     <div>
-                        <label for="idEmail">Senha</label>
-                        <input type="text" name="txtPass" id="idPass" placeholder="Senha" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
-                        title="Precisa conter no mínimo 8 caractéres e um em maiusculo e pelo menos um em minusculo">
+                        <label for="idNome">Email</label>
+                        <input type="email" name="txtEmail" id="idEmail" placeholder="Email" required>
                     </div>
                     <div>
-                        <label for="idNome">Nome</label>
-                        <input type="text" name="txtNome" id="idNome" placeholder="Nome">
+                        <label for="idEmail">Senha</label>
+                        <input type="password" name="txtPass" id="idPass" placeholder="Senha" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                        title="Precisa conter no mínimo 8 caractéres e um em maiusculo e pelo menos um em minusculo">
                     </div>
                     <div>
                         <label for="idGrava">Gravar Dados</label>
                         <input type="checkbox" name="chbGrava" id="idGrava" required>
                     </div>
-                    <!-- <div>
-                        <fieldset>
-                            <legend>Genêro</legend>
-                            <label for="">Masculino</label>
-                            <input type="radio" name="rdb" id="idRdbM" value="m" checked="checked">
-                            <label for="">Feminino</label>
-                            <input type="radio" name="rdb" id="idRdbF" value="f">
-                            <label for="">Outros</label>
-                            <input type="radio" name="rdb" id="idRdbO" value="o">
-                        </fieldset>
-                    </div> -->
                     <div>
-                        <input type="submit" value="Enviar">
-                        <input type="reset" value="Limpar">
+                        <fieldset>
+                          <legend>Genêro</legend>
+                          <select name="genero" id="idGenero">
+                            <option value="">Masculino</option>
+                            <option value="">Feminino</option>
+                            <option value=""></option>
+                          </select>
+                        </fieldset>
+                    </div>
+                    <div>
+                        <button type="submit">Login</button>
+                        <button type="reset">Limpar</button>
                     </div>
                 </fieldset>
             </form>
