@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Document</title>
+    <title>My-layout</title>
+
+    <script src="./js/index.js"></script>
+
 </head>
 <body>
     <header class="cabecalho">
@@ -54,7 +57,7 @@
             <a href="#"><img src="./img/social-3.png" alt="Logo Twitter"></a>
         </nav>
         <div>
-            <form action="index.html" method="POST" onsubmit="return true">
+            <form action="index.html" method="POST" onsubmit="return false">
                 <fieldset>
                     <legend>Login</legend>
                     <div>
@@ -80,8 +83,8 @@
                           </select>
                         </fieldset>
                     </div>
-                    <div>
-                        <button type="submit">Login</button>
+                    <div class="btn">
+                        <button onclick="document.write('Olá mundo')" type="submit">Login</button>
                         <button type="reset">Limpar</button>
                     </div>
                 </fieldset>
