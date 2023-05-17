@@ -5,19 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Document</title>
+    <title>My-layout</title>
+
+    <script defer src="./js/index.js"></script>
+
 </head>
 <body>
     <header class="cabecalho">
         <img src="./img/logo.png" alt="">
         <nav>
-            <a href="">Item-1</a>
-            <a href="">Item-2</a>
+            <a href="./index.html">HOME</a>
+            <a href="./info.html">INFO</a>
             <a href="">Item-3</a>
         </nav>
     </header>
 
     <h2 class="tit-sec">Seção de Fotos</h2>
+
+    <button id="meu-btn">Click</button>
 
     <section class="conteudo">
         <div>
@@ -48,11 +53,45 @@
 
     <footer class="rodape">
         <h2>Fale Conosco</h2>
-        <nav>
+        <!-- <nav>
             <a href=""><img src="./img/social-1.png" alt="Logo Github"></a>
             <a href="#"><img src="./img/social-2.png" alt="Logo Facebook"></a>
             <a href="#"><img src="./img/social-3.png" alt="Logo Twitter"></a>
-        </nav>
+        </nav> -->
+        <div>
+            <form action="index.html" method="POST" onsubmit="return false">
+                <fieldset>
+                    <legend>Login</legend>
+                    <div>
+                        <label for="idNome">Email</label>
+                        <input type="email" name="txtEmail" id="idEmail" placeholder="Email" required>
+                    </div>
+                    <div>
+                        <label for="idEmail">Senha</label>
+                        <input type="password" name="txtPass" id="idPass" placeholder="Senha" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                        title="Precisa conter no mínimo 8 caractéres e um em maiusculo e pelo menos um em minusculo">
+                    </div>
+                    <div>
+                        <label for="idGrava">Gravar Dados</label>
+                        <input type="checkbox" name="chbGrava" id="idGrava" required>
+                    </div>
+                    <div>
+                        <fieldset>
+                          <legend>Genêro</legend>
+                          <select name="genero" id="idGenero">
+                            <option value="">Masculino</option>
+                            <option value="">Feminino</option>
+                            <option value=""></option>
+                          </select>
+                        </fieldset>
+                    </div>
+                    <div class="btn">
+                        <button onclick="document.write('Olá mundo')" type="submit">Login</button>
+                        <button type="reset">Limpar</button>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
     </footer>
 </body>
 </html>
